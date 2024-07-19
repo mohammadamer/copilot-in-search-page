@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "copilot-in-search-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/copilotInSearch/CopilotInSearchApplicationCustomizer.js",
+          "manifest": "./src/extensions/copilotInSearch/CopilotInSearchApplicationCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "CopilotInSearchApplicationCustomizerStrings": "lib/extensions/copilotInSearch/loc/{locale}.js"
+  }
+}
