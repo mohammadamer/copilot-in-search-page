@@ -1,0 +1,22 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.19.1",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.12.0"
+    },
+    "version": "1.18.0",
+    "libraryName": "copilot-in-search-page",
+    "libraryId": "ae3a6fe7-3b44-43b4-a09b-75afef714061",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "copilot-in-search-page",
+    "solutionShortDescription": "copilot-in-search-page description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "extension",
+    "extensionType": "ApplicationCustomizer"
+  }
+}

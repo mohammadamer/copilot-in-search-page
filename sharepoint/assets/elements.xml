@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <CustomAction
+        Title="CopilotInSearch"
+        Location="ClientSideExtension.ApplicationCustomizer"
+        ClientSideComponentId="16b8e8e5-9d40-458d-bc2f-1714c77d9b4f"
+        ClientSideComponentProperties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+    </CustomAction>
+</Elements>
