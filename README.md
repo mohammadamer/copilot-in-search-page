@@ -2,9 +2,9 @@
 
 ## Summary
 
-Short summary on functionality and used technologies.
+Copilot in Search Page is a SharePoint Framework SPFx extension for integrating a custom Copilot into your SharePoint search page.
 
-[picture of the solution in action, if possible]
+![Copilot in SharePoint Search Page](documentation\screenshot-solution-in-action.png)
 
 ## Used SharePoint Framework Version
 
@@ -19,20 +19,34 @@ Short summary on functionality and used technologies.
 
 ## Prerequisites
 
-> Any special pre-requisites?
+> Pre-requisites:
+- [Azure App registration to set up Microsoft Entra ID authentication for your custom copilot](https://learn.microsoft.com/en-us/microsoft-copilot-studio/configuration-authentication-azure-ad).
+- [Azure App registration to manage and handle the SSO experience effectively within SharePoint](https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-sso?tabs=webApp#create-app-registrations-for-your-custom-website).
+- [A Custom Copilot built in Copilot studio with a knowledge source set to be your SharePoint site](https://www.youtube.com/watch?v=yFCYwIFj3Jg).
+- A SharePoint list for holding the copilot configurations. XML PnP list template in the Templates folder in root folder of the app will help you to create the list.
+
+> Add the configuration to the list column as following:
+- Title: ConfigList
+- BotUrl: The token endpoint for Microsoft Copilot studio. This can be found in the Microsoft Copilot studio designer, under Settings -> Channels -> Mobile App
+- CustomScope: The scope defined for the custom API in the copilot app registration. In the first Pre-requisite.
+- ClientId: The Azure App registration created for handling SSO. In the second Pre-requisite.
+- Authority: The login URL for your tenant. For example: mytenant.onmicrosoft.com
+- Greet: Should the copilot greet users at the beginning of the conversation. "true/false"
+- BotName: The title for the copilot bot.
+- PanelLabel: The Label for copilot dialog chat.
+
 
 ## Solution
 
 | Solution    | Author(s)                                               |
 | ----------- | ------------------------------------------------------- |
-| folder name | Author details (name, company, twitter alias with link) |
+| Copilot In Search Page | [Mohammed Amer](https://github.com/mohammadamer) |
 
 ## Version history
 
 | Version | Date             | Comments        |
 | ------- | ---------------- | --------------- |
-| 1.1     | March 10, 2021   | Update comment  |
-| 1.0     | January 29, 2021 | Initial release |
+| 1.0     | August 04, 2024 | Initial release |
 
 ## Disclaimer
 
@@ -41,14 +55,16 @@ Short summary on functionality and used technologies.
 ---
 
 ## Minimal Path to Awesome
-
+- Follow the pre-requisites for creating 
+    - Azure App regisrations
+    - Custom copilot in Copilot studio
+    - Configuration list then add a record for the required configurations as mentioned previously
 - Clone this repository
 - Ensure that you are at the solution folder
 - in the command-line run:
-  - **npm install**
+  - **yarn install** or **npm install**
   - **gulp serve**
 
-> Include any additional steps as needed.
 
 ## Features
 
@@ -56,13 +72,8 @@ Description of the extension that expands upon high-level summary above.
 
 This extension illustrates the following concepts:
 
-- topic 1
-- topic 2
-- topic 3
+- The extension is integrating a custom Copilot into your SharePoint search page where you ask the copilot questions, the it provide you Generative answers from the current SharePoint site content.
 
-> Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
-
-> Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
 
 ## References
 
