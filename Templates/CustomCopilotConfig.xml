@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2022/09/ProvisioningSchema">
+  <pnp:Preferences
+    Generator="PnP.Framework, Version=1.15.1.0, Culture=neutral, PublicKeyToken=0d501f89f11b748c" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-ECC86A910A9D415491F0BD1D95F71316">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-ECC86A910A9D415491F0BD1D95F71316" Version="1"
+      BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:Lists>
+        <pnp:ListInstance Title="CustomCopilotConfig" Description="" DocumentTemplate=""
+          TemplateType="100" Url="Lists/CustomCopilotConfig" EnableVersioning="true"
+          MinorVersionLimit="0" MaxVersionLimit="50" DraftVersionVisibility="0"
+          TemplateFeatureID="00bfea71-de22-43b2-a848-c05709900100" EnableFolderCreation="false"
+          DefaultDisplayFormUrl="{site}/Lists/CustomCopilotConfig/DispForm.aspx"
+          DefaultEditFormUrl="{site}/Lists/CustomCopilotConfig/EditForm.aspx"
+          DefaultNewFormUrl="{site}/Lists/CustomCopilotConfig/NewForm.aspx"
+          ImageUrl="/_layouts/15/images/itgen.png?rev=47" IrmExpire="false" IrmReject="false"
+          IsApplicationList="false" ValidationFormula="" ValidationMessage="">
+          <pnp:ContentTypeBindings>
+            <pnp:ContentTypeBinding ContentTypeID="0x01" Default="true" />
+            <pnp:ContentTypeBinding ContentTypeID="0x0120" />
+          </pnp:ContentTypeBindings>
+          <pnp:Views>
+            <View Name="{25A5B609-B338-4226-8AA1-E45DB2865BD3}" DefaultView="TRUE" MobileView="TRUE"
+              MobileDefaultView="TRUE" Type="HTML" DisplayName="All Items"
+              Url="{site}/Lists/CustomCopilotConfig/AllItems.aspx" Level="1" BaseViewID="1"
+              ContentTypeID="0x" ImageUrl="/_layouts/15/images/generic.png?rev=47">
+              <Query />
+              <ViewFields>
+                <FieldRef Name="LinkTitle" />
+                <FieldRef Name="BotUrl" />
+                <FieldRef Name="CustomScope" />
+                <FieldRef Name="ClientId" />
+                <FieldRef Name="Authority" />
+                <FieldRef Name="Greet" />
+                <FieldRef Name="BotName" />
+                <FieldRef Name="PanelLabel" />
+              </ViewFields>
+              <RowLimit Paged="TRUE">30</RowLimit>
+              <JSLink>clienttemplates.js</JSLink>
+              <ColumnWidth>
+                <FieldRef Name="Authority" width="392" />
+              </ColumnWidth>
+            </View>
+          </pnp:Views>
+          <pnp:Fields>
+            <Field ID="{76d13cd2-1bae-45a5-8b74-545b87b65037}" Name="_ColorTag"
+              DisplaceOnUpgrade="TRUE" ShowInFileDlg="FALSE" ReadOnly="TRUE" Type="Text"
+              DisplayName="Color Tag" SourceID="http://schemas.microsoft.com/sharepoint/v3"
+              StaticName="_ColorTag" FromBaseType="TRUE" ColName="nvarchar4" />
+            <Field DisplayName="BotUrl" Format="Dropdown" IsModern="TRUE" MaxLength="255"
+              Name="BotUrl" Title="BotUrl" Type="Text" ID="{9ff1d47d-e581-4a5a-b1cc-0499c21b4a73}"
+              SourceID="{{listid:CustomCopilotConfig}}" StaticName="BotUrl" ColName="nvarchar7"
+              RowOrdinal="0" />
+            <Field DisplayName="CustomScope" Format="Dropdown" IsModern="TRUE" MaxLength="255"
+              Name="CustomScope" Title="CustomScope" Type="Text"
+              ID="{b9096bef-f6f1-47fd-a3bb-13c83cffcbb6}" SourceID="{{listid:CustomCopilotConfig}}"
+              StaticName="CustomScope" ColName="nvarchar8" RowOrdinal="0" />
+            <Field DisplayName="ClientId" Format="Dropdown" IsModern="TRUE" MaxLength="255"
+              Name="ClientId" Title="ClientId" Type="Text"
+              ID="{1f5a72bc-f785-4d28-bd6f-81859c3aea43}" SourceID="{{listid:CustomCopilotConfig}}"
+              StaticName="ClientId" ColName="nvarchar9" RowOrdinal="0" />
+            <Field DisplayName="Authority" Format="Dropdown" IsModern="TRUE" MaxLength="255"
+              Name="Authority" Title="Authority" Type="Text"
+              ID="{0d71d21a-6511-406b-9e25-2d60bd24f60f}" SourceID="{{listid:CustomCopilotConfig}}"
+              StaticName="Authority" ColName="nvarchar10" RowOrdinal="0" />
+            <Field DisplayName="Greet" Format="Dropdown" IsModern="TRUE" Name="Greet" Title="Greet"
+              Type="Boolean" ID="{b012a373-55c0-4fc3-b091-007ecb34fc28}"
+              SourceID="{{listid:CustomCopilotConfig}}" StaticName="Greet" ColName="bit1"
+              RowOrdinal="0">
+              <Default>1</Default>
+            </Field>
+            <Field DisplayName="BotName" Format="Dropdown" IsModern="TRUE" MaxLength="255"
+              Name="BotName" Title="BotName" Type="Text" ID="{a1c20cff-1216-4e4b-84ea-4ee0bed2f17b}"
+              SourceID="{{listid:CustomCopilotConfig}}" StaticName="BotName" ColName="nvarchar11"
+              RowOrdinal="0" />
+            <Field DisplayName="PanelLabel" Format="Dropdown" IsModern="TRUE" MaxLength="255"
+              Name="PanelLabel" Title="PanelLabel" Type="Text"
+              ID="{7818f05c-f973-4c63-a629-15dd79ff60d7}" SourceID="{{listid:CustomCopilotConfig}}"
+              StaticName="PanelLabel" ColName="nvarchar12" RowOrdinal="0" />
+          </pnp:Fields>
+          <pnp:FieldRefs>
+            <pnp:FieldRef ID="fa564e0f-0c70-4ab9-b863-0177e6ddd247" Name="Title" DisplayName="Title" />
+          </pnp:FieldRefs>
+        </pnp:ListInstance>
+      </pnp:Lists>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

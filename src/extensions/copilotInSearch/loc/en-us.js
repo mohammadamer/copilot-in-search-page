@@ -1,5 +1,7 @@
 define([], function() {
   return {
-    "Title": "CopilotInSearchApplicationCustomizer"
+    "Title": "CopilotInSearchApplicationCustomizer",
+    "CopilotButtonTitle": "Copilot in Search",
+    "CopilotPanelLabel": "Copilot Chat",
   }
 });

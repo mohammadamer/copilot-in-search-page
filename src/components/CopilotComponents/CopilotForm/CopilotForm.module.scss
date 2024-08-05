@@ -1,0 +1,15 @@
+@import "~@fluentui/react/dist/sass/References";
+
+:where(div#apps-copilot-in-search-copilotPanel) div[class^="ms-Panel-scrollableContent scrollableContent-"] {
+    overflow: hidden !important;
+}
+  
+.apps-copilot-in-search-webChat-custom {
+    width: 100%;
+    height: 0rem;
+    min-height: 100dvh !important;
+}
+
+div[class^="ms-Panel-footerInner footerInner-"] {
+    padding: 0px 10px !important;
+}
