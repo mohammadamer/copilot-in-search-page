@@ -4,11 +4,15 @@
 
 Copilot in Search Page is a SharePoint Framework SPFx extension for integrating a custom Copilot into your SharePoint search page.
 
-![Copilot in SharePoint Search Page](.\documentation\screenshot-solution-in-action.png)
+![Copilot in SharePoint Search Page](/documentation/screenshot-solution-in-action.png)
 
 ## Used SharePoint Framework Version
 
 ![version](https://img.shields.io/badge/version-1.18.0-green.svg)
+
+## Used node Version
+
+![version](https://img.shields.io/badge/version-18.19.1-green.svg)
 
 ## Applies to
 
@@ -23,9 +27,9 @@ Copilot in Search Page is a SharePoint Framework SPFx extension for integrating 
 - [Azure App registration to set up Microsoft Entra ID authentication for your custom copilot](https://learn.microsoft.com/en-us/microsoft-copilot-studio/configuration-authentication-azure-ad).
 - [Azure App registration to manage and handle the SSO experience effectively within SharePoint](https://learn.microsoft.com/en-us/microsoft-copilot-studio/configure-sso?tabs=webApp#create-app-registrations-for-your-custom-website).
 - [A Custom Copilot built in Copilot studio with a knowledge source set to be your SharePoint site](https://www.youtube.com/watch?v=yFCYwIFj3Jg).
-- A SharePoint list for holding the copilot configurations. XML PnP list template in the Templates folder in root folder of the app will help you to create the list.
+- A SharePoint list for holding the copilot configurations. XML PnP list template in the [Templates folder](/Templates) in root folder of the app will help you to create the list.
 
-> Add the configuration to the list column as following:
+> Add the configurations to the list columns as following:
 - Title: ConfigList
 - BotUrl: The token endpoint for Microsoft Copilot studio. This can be found in the Microsoft Copilot studio designer, under Settings -> Channels -> Mobile App
 - CustomScope: The scope defined for the custom API in the copilot app registration. In the first Pre-requisite.
