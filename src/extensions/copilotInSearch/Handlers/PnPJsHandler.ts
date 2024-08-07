@@ -6,7 +6,7 @@ import "@pnp/sp/lists";
 import "@pnp/sp/items";
 import "@pnp/sp/items/get-all";
 import "@pnp/sp/site-users/web";
-import { CONSTANTS, CopilotConfigListKeys, SharePointFields } from "../../../common/constants";
+import { CONSTANTS, SharePointFields } from "../../../common/constants";
 import { ISiteUserInfo } from "@pnp/sp/site-users/types";
 import { ApplicationCustomizerContext } from "@microsoft/sp-application-base";
 import { spfi, SPFx, SPFI } from "@pnp/sp";
@@ -33,8 +33,7 @@ export default class PnPJsHandler implements IPnPJsHandler {
                 SharePointFields.greetField,
                 SharePointFields.botName,
                 SharePointFields.panelLabel
-            ).filter(`${SharePointFields.titleField} eq '${CopilotConfigListKeys.configList}'`)
-            .top(1)
+            ).top(1)
             .getAll();
         return Promise.resolve(items[0]);
     }

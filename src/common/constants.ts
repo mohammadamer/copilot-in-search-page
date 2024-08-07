@@ -30,10 +30,6 @@ export const SharePointFields = {
     valueField: `Value`
 };
 
-export const CopilotConfigListKeys = {
-    configList: `ConfigList`
-};
-
 export const ErrorMessages = {
     copilotConfigListError: `<p>Something went wrong with the Copilot configuration list. Check the configuration list.</p>`
 };
