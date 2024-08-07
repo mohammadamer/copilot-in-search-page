@@ -4,7 +4,9 @@
 
 Copilot in Search Page is a SharePoint Framework SPFx extension for integrating a custom Copilot into your SharePoint search page.
 
-![Copilot in SharePoint Search Page](/documentation/screenshot-solution-in-action.png)
+![Copilot in SharePoint Search Page](/documentation/screenshot-solution-in-action01.png)
+
+![Copilot in SharePoint Search Page](/documentation/screenshot-solution-in-action02.png)
 
 ## Used SharePoint Framework Version
 
