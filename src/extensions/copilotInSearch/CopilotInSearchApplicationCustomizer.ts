@@ -28,7 +28,7 @@ export default class CopilotInSearchApplicationCustomizer extends BaseApplicatio
   public onInit(): Promise<void> {
     Log.info(LOG_SOURCE, `Initialized ${strings.Title}`);
 
-    this.context.application.navigatedEvent.add(this, () => this._copilotInSearchApplicationCustomizerHandler.navigatedEventHandler());
+    this._copilotInSearchApplicationCustomizerHandler.navigatedEventHandler();
     return super.onInit().then(_ => {this._pnPJsHandler.init(this.context)});
   }
 
