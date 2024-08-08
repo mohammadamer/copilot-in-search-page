@@ -4,9 +4,9 @@
 
 Copilot in Search Page is a SharePoint Framework SPFx extension for integrating a custom Copilot into your SharePoint search page.
 
-![Copilot in SharePoint Search Page](/documentation/screenshot-solution-in-action01.png)
+![Copilot in SharePoint Search Page](/documentation/screenshot-solution-in-action03.png)
 
-![Copilot in SharePoint Search Page](/documentation/screenshot-solution-in-action02.png)
+![Copilot in SharePoint Search Page](/documentation/screenshot-solution-in-action04.png)
 
 ## Used SharePoint Framework Version
 
@@ -32,7 +32,7 @@ Copilot in Search Page is a SharePoint Framework SPFx extension for integrating 
 - A SharePoint list for holding the copilot configurations. XML PnP list template in the [Templates folder](/Templates) in root folder of the app will help you to create the list.
 
 > Add the configurations to the list columns as following:
-- Title: ConfigList
+- Title: any title
 - BotUrl: The token endpoint for Microsoft Copilot studio. This can be found in the Microsoft Copilot studio designer, under Settings -> Channels -> Mobile App
 - CustomScope: The scope defined for the custom API in the copilot app registration. In the first Pre-requisite.
 - ClientId: The Azure App registration created for handling SSO. In the second Pre-requisite.
