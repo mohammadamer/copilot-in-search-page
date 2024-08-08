@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { ICopilotPanelState, ICopilotPanelProps, ICopilotComponentsConfigProperties } from './ICopilotPanel';
-import { Panel } from '@fluentui/react';
+import { Panel, PanelType } from '@fluentui/react';
 import { override } from '@microsoft/decorators';
 import { CONSTANTS, ErrorMessages, Urls } from '../../../common/constants';
 import CopilotForm from '../CopilotForm/CopilotForm';
@@ -68,7 +68,8 @@ export default class CopilotPanel extends React.PureComponent<ICopilotPanelProps
                 closeButtonAriaLabel="Close"
                 id={CONSTANTS.CopilotPanelId}
                 onRenderFooterContent={onRenderFooterContent}
-                isFooterAtBottom={true}>
+                isFooterAtBottom={true}
+                type={PanelType.medium}>
             </Panel>
         );
     }
